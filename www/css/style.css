@@ -11,3 +11,6 @@ body{
 font{
     color: #87CEFA;
 }
+.btn{
+    width: 100%;   
+}
