@@ -2,3 +2,12 @@
 button, label{
   margin-top: 10px;
 }
+body{
+    background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaETy2ODjz-tqvOeF1DQbW5DEldUjSYArYUDzeMWxZDxGzCs0xcg);
+}
+.jumbotron{
+    background:url(https://ae01.alicdn.com/kf/HTB1sGmfgvNNTKJjSspcq6z4KVXa0/Novo-Tamanho-Grande-Brilho-Homens-Tatuagem-Do-Airbrush-Stencils-Modelo-de-Desenho-lobo-Tigre-Le-o.jpg_640x640.jpg); 
+}
+font{
+    color: #87CEFA;
+}
