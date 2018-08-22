@@ -12,5 +12,12 @@ font{
     color: #87CEFA;
 }
 .btn{
-    width: 100%;   
+    width: 100%;
+    height: 50px;
+}
+.painel button{
+    
+}
+#result{
+    height: 100px;
 }
