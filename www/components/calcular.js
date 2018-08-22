@@ -5,7 +5,6 @@ var valor2;
 $(document).on("click","#somar", function(){
 
     
-    var result = valor1 + valor2;
     $("#result").val(result);
 });
 $(document).on("click","#subtracao", function(){
