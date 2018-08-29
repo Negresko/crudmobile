@@ -1,29 +1,38 @@
 var valor = "";
 var valor1 = 0;
 var valor2;
-
+var op;
+var result=0;
 $(document).on("click","#somar", function(){
-
-    
-    $("#result").val(result);
+    op="+";
+    valor1=parseFloat(valor);
+    valor="";
+    result =  valor1;
+    $("#result").val(valor);
 });
 $(document).on("click","#subtracao", function(){
 
-    
-    var result = valor1 - valor2;
-    $("#result").val(result);
+    op="-";
+    valor1=parseFloat(valor);
+    valor="";
+    result = valor1;
+    $("#result").val(valor);
 }); 
 $(document).on("click","#multiplicacao", function(){
 
-    
-    var result = valor1 * valor2;
-    $("#result").val(result);
+    op="*";
+    valor1=parseFloat(valor);
+    valor="";
+    result = valor1;
+    $("#result").val(valor);
 }); 
 $(document).on("click","#divisao", function(){
 
-    
-    var result = valor1 / valor2;
-    $("#result").val(result);
+    op="/";
+    valor1=parseFloat(valor);
+    valor="";
+    result = valor1;
+    $("#result").val(valor);
 });
 $(document).on("click","#um", function(){
     valor += "1";
@@ -73,4 +82,37 @@ $(document).on("click","#zero", function(){
     valor += "0";
    $("#result").val(valor);
    
+});
+$(document).on("click","#ponto", function(){
+    valor += ".";
+   $("#result").val(valor);
+   
+});
+$(document).on("click","#c", function(){
+    valor = "";
+    valor1 = 0;
+    valor2 = "";
+   $("#result").val(valor);
+   
+});
+$(document).on("click","#igual", function(){
+  valor2=parseFloat(valor);
+   if(op=="+")
+   {
+     result+=valor2;
+   }
+   if(op=="-")
+   {
+     result-=valor2;
+   }
+   if(op=="*")
+   {
+     result*=valor2;
+   }
+   if(op=="/")
+   {
+     result/=valor2;
+   }
+   $("#result").val(result);
+   valor = "";
 });
