@@ -3,21 +3,21 @@ button, label{
   margin-top: 10px;
 }
 body{
-    background:url(https://i.pinimg.com/originals/1f/b5/29/1fb5292125c9ab754d06a1e08013f57e.jpg);
+    background-color: white;
 }
 .jumbotron{
-    background:url(https://ae01.alicdn.com/kf/HTB1sGmfgvNNTKJjSspcq6z4KVXa0/Novo-Tamanho-Grande-Brilho-Homens-Tatuagem-Do-Airbrush-Stencils-Modelo-de-Desenho-lobo-Tigre-Le-o.jpg_640x640.jpg); 
+    background-color: #fff; 
 }
 font{
-    color: #87CEFA;
+    color: #000;
 }
 .btn{
     width: 100%;
     height: 50px;
 }
-.painel button{
-    
+#enviar{
+ background-color: black;
 }
-#result{
-    height: 100px;
+#listar{
+  background-color: red;
 }

@@ -8,6 +8,7 @@
     <script src="components/loader.js"></script>
     <script src="components/jquery-3.3.1.min.js"></script>
     <script src="components/calcular.js"></script>
+    <script src="components/banco.js"></script>
     <!--CSS-->
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -19,78 +20,24 @@
       <div class="row">
         <div class="col-xs-12">
           <div class="jumbotron">
-          <h1><font>Calculadora Avançada</font></h1>
+          <center><h2><font>Sistema de Cadastro</font></h2></center>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-xs-12"> 
-          <label for="result">Resultado</label>
-          <input type="number" id="result" class="form-control" readonly>
+          <center><label for="usuario">Usuario:</label></center>
+          <input type="text" id="nome" name="nome" class="form-control">
+          <center><label for="cpf">CPF:</label></center>
+          <input type="text" id="cpf" name="cpf" class="form-control">
         </div>
       </div>  
-        <div class="row painel">
-            <div class="col-xs-3">
-                <button id="sete" class="btn btn-success btn-block">7</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="oito" class="btn btn-success btn-block">8</button>
-            </div>
-            <div class="col-xs-3">
-            <button id="nove" class="btn btn-success btn-block">9</button>
-            </div>
-            <div class="col-xs-3">
-            <button id="somar" class="btn btn-success btn-block">+</button>
-            </div>
-        </div>
-        <div class="row painel">
-            <div class="col-xs-3">
-                <button id="quatro" class="btn btn-success btn-block">4</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="cinco" class="btn btn-success btn-block">5</button>
-            </div>
-            <div class="col-xs-3">
-            <button id="seis" class="btn btn-success btn-block">6</button>
-            </div>
-            <div class="col-xs-3">
-            <button id="subtracao" class="btn btn-success btn-block">-</button>
-            </div>
-        </div>
-        <div class="row painel">
-            <div class="col-xs-3">
-                <button id="um" class="btn btn-success btn-block">1</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="dois" class="btn btn-success btn-block">2</button>
-            </div>
-            <div class="col-xs-3">
-            <button id="tres" class="btn btn-success btn-block">3</button>
-            </div>
-            <div class="col-xs-3">
-            <button id="divisao" class="btn btn-success btn-block">/</button>
-            </div>
-        </div>
-        <div class="row painel">
-            <div class="col-xs-3">
-                <button id="zero" class="btn btn-success btn-block">0</button>
-            </div>
-            <div class="col-xs-3">
-                <button id="ponto" class="btn btn-success btn-block">.</button>
-            </div>
-            <div class="col-xs-3">
-            <button id="igual" class="btn btn-success btn-block">=</button>
-            </div>
-            <div class="col-xs-3">
-            <button id="multiplicacao" class="btn btn-success btn-block">*</button>
-            </div>
-        </div>
         <div class="row">
           <div class="col-xs-12">
-            <button id="c" class="btn btn-success btn-block">C</button>
+            <button id="enviar" class="btn btn-success btn-block">Enviar</button>
+            <button id="listar" class="btn btn-success btn-block">Listar Pessoas</button>
           </div>
         </div>
       </div>  
-    </div>
 </body>
 </html>
