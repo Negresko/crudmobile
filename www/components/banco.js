@@ -93,24 +93,22 @@ $(document).on("click", "#salvar", function(){
   });
 });
 
+$(document).on("click", "#editar", function(){
+  habilita();
+});
+
 $(document).on("click", "#cancelar", function(){
   desabilita();
   $("nome").val("");
   $("cpf").val("");
 });
 
-$(document).on("click", "#editar", function(){
-  habilita();
-});
-
 function desabilita(){
-  desabilita();
-  $('nome').prop('readonly', false);
-  $('cpf').prop('readonly', false);
+  $('nome').prop('readonly', true);
+  $('cpf').prop('readonly', true);
 }
 
 function habilita(){
-  desabilita();
-  $('nome').prop('readonly', true);
-  $('cpf').prop('readonly', true);
+  $('nome').prop('readonly', false);
+  $('cpf').prop('readonly', false);
 }
